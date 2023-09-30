@@ -1,0 +1,360 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+}
+
+.black {
+  color: black !important;
+}
+
+.none {
+  display: none !important;
+}
+
+.flex {
+  display: flex;
+}
+
+.padding {
+  padding: 5rem 20%;
+}
+
+.carousel-item img {
+  width: 225px;
+  height: 150px;
+}
+
+header,
+footer {
+  padding: 1rem 20%;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+
+header {
+  transition: all;
+  transition-duration: 0.5s;
+}
+
+.header-background {
+  background-color: white;
+}
+
+.logo-container {
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.image-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.text-logo {
+  font-size: 1.25rem;
+  line-height: 19px;
+}
+
+.nav-bar {
+  gap: 2rem;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  color: white;
+}
+
+.page-content {
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#home {
+  background-image: url(./images/first\ page.jpg);
+}
+
+.mobile-bar-item {
+  display: none;
+}
+
+#history {
+  background-image: url(./images/dark\ mountain.jpg);
+  justify-content: space-between;
+  padding: 0;
+}
+
+h1 {
+  align-items: center;
+  line-height: 12rem;
+}
+
+h1 span {
+  font-size: 10rem;
+  color: #6a7a97e4;
+}
+
+h1 p {
+  margin-bottom: -4rem;
+  margin-left: -1.5rem;
+  color: #404e6c;
+}
+
+.history-header-container {
+  padding: 5rem 20%;
+}
+
+.history-content {
+  padding: 0 5rem;
+}
+
+.carousel-container {
+  background: #182131cf;
+  width: 100%;
+  justify-content: center;
+  height: 30%;
+  gap: 2rem;
+}
+
+.btn {
+  background: none;
+  border: none;
+}
+
+.btn span {
+  font-size: 3rem;
+}
+
+.carousel {
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#team {
+  height: 100vh;
+}
+
+.team-content {
+  height: calc(100% - 10rem);
+  background-image: url(./images/weird\ one.jpg);
+  background-position: center;
+}
+
+.team-header-content {
+  position: relative;
+  z-index: 2;
+  background-color: white;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 20%;
+}
+
+.team-nav {
+  align-items: center;
+  padding: 0 20%;
+  height: 2.5rem;
+  background-color: #404e6c;
+}
+
+.team-nav-item {
+  padding: 0 1rem;
+  align-items: center;
+  height: 100%;
+}
+
+.team-nav-item:first-child {
+  background-color: #b0b4be;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  color: #404e6c;
+}
+
+.team-nav-item:last-child {
+  color: #b0b4be;
+}
+
+.team-schedule {
+  background-color: #eff2f5b5;
+  margin: 7rem 22% 0;
+  padding: 2rem;
+  width: 300px;
+}
+
+.team-schedule h2 {
+  margin-bottom: 0.5rem;
+  color: #404e6c;
+}
+
+.team-schedule-container {
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.month {
+  flex-direction: column;
+}
+
+.month-item {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+}
+
+footer {
+  position: relative;
+  background-color: #404e6c;
+  bottom: 0;
+  color: #61759e;
+}
+
+footer img {
+  filter: opacity(0.5) drop-shadow(0 0 #61759e);
+}
+
+@media screen and (max-width: 1024px) {
+  .history-header-container {
+    padding: 5rem 15%;
+  }
+
+  h1 span {
+    font-size: 7rem;
+  }
+
+  h1 p {
+    margin-bottom: -2.5rem;
+    margin-left: -1rem;
+  }
+
+  .history-content {
+    padding: 0 3rem;
+  }
+
+  .carousel {
+    justify-content: flex-start;
+    width: 707px;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .history-header-container {
+    padding: 4rem 10%;
+  }
+
+  h1 span {
+    font-size: 5rem;
+  }
+
+  h1 p {
+    margin-bottom: -1rem;
+    margin-left: -0.75rem;
+  }
+
+  .history-content {
+    padding: 0;
+  }
+
+  .carousel {
+    justify-content: flex-start;
+    width: 466px;
+    overflow-x: hidden;
+  }
+
+  .team-header-content {
+    /* margin-top: 56px; */
+    /* position: static; */
+    flex-direction: column;
+    padding: 0.5rem 10%;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .history-header-container h1 {
+    line-height: 8rem;
+  }
+
+  .team-header-content h1 {
+    line-height: 5rem;
+  }
+
+  .team-schedule {
+    margin: 3rem 10% 0;
+  }
+
+  footer {
+    padding: 1rem 10%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .mobile-bar-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    position: relative;
+    width: 100%;
+    padding: 1rem 10%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+
+  nav, .header-background {
+    display: none;
+  }
+
+  header {
+    padding: 1rem;
+    position: absolute;
+  }
+
+  .history-header-container {
+    padding: 0 10%;
+  }
+
+  h1 span {
+    font-size: 5rem;
+  }
+
+  h1 p {
+    margin-bottom: -1rem;
+    margin-left: -0.75rem;
+  }
+
+  .carousel {
+    justify-content: flex-start;
+    width: 225px;
+    overflow-x: hidden;
+  }
+
+  .team-header-content {
+    position: static;
+    /* padding: 56px 10% 0.5rem; */
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
